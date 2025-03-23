@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Đếm số ký tự trong ô nhập</h2>
+    <textarea id="textInput" placeholder="Nhập văn bản..."></textarea>
+    <button onclick="countCharacters()">Kiểm tra</button>
+    <p id="result"></p>
+
+    <script>
+        function countCharacters() {
+            let text = document.getElementById("textInput").value;
+            let count = text.length;
+            document.getElementById("result").innerText = "Số ký tự: " + count;
+        }
+    </script>
+</body>
+</html>
